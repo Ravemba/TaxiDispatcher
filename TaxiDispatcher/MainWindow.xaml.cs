@@ -103,6 +103,7 @@ namespace TaxiDispatcher
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             foreach (var item in e.RemovedItems)
             {
                 if (mVM.SelectedOrders.Contains((Order)item))

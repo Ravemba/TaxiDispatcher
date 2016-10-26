@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("TaxiDispatcher")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Amconsoft")]
 [assembly: AssemblyProduct("TaxiDispatcher")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
