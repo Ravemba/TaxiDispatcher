@@ -16,7 +16,6 @@ namespace TaxiDispatcher.ViewModels
             _executionAction = execute;
             _canExecutePredicate = canExecute;
         }
-
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }

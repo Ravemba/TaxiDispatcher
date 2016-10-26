@@ -10,5 +10,6 @@ namespace TaxiDispatcher.Models
     public class SectorPolyline
     {
         public LocationCollection Locations { get; set; }
+
     }
 }

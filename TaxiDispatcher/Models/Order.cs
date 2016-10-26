@@ -24,6 +24,7 @@ namespace TaxiDispatcher.Models
 
     public class City
     {
+
         public string Name { get; set; }
         public Location location { get; set; }
     }

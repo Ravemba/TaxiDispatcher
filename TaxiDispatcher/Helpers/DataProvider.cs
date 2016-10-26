@@ -20,7 +20,6 @@ namespace TaxiDispatcher.Helpers
                         }
                 };
             });
-
         }
 
         public static async Task<List<Point>> GetDriverList()

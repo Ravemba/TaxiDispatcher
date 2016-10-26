@@ -23,6 +23,7 @@ namespace TaxiDispatcher.Models
             }
         }
 
+
         private Location location;
         public Location Location
         {

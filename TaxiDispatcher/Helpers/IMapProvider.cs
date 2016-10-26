@@ -10,5 +10,6 @@ namespace TaxiDispatcher.Helpers
     interface IMapProvider
     {
         Location[] GetTrafficPoints();
+
     }
 }

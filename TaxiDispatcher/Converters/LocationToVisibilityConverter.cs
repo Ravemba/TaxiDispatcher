@@ -12,7 +12,6 @@ namespace TaxiDispatcher.Converters
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
             var visibility = Visibility.Hidden;
-
             if (values.Length == 2 && values[0] is Map && values[1] is Transform)
             {
                 var parentMap = (Map)values[0];

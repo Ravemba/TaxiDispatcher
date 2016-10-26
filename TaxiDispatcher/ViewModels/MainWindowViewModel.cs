@@ -17,7 +17,6 @@ namespace TaxiDispatcher.ViewModels
     internal class MainWindowViewModel : NotifyControl
     {
         //private List<SectorPolyline> mSectors;
-
         public ObservableCollection<SectorPolyline> Sectors { get; set; }
         public ObservableCollection<Point> DriverPoints { get; set; }
         public ObservableCollection<Order> Orders { get; set; }

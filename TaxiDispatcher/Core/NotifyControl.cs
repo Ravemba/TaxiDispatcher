@@ -16,6 +16,7 @@ namespace TaxiDispatcher.Core
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
+
         }
 
         protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
