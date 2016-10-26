@@ -11,7 +11,6 @@ namespace TaxiDispatcher.Helpers
 {
     public class OSMProvider
     {
-
         #region Constructor and private fields
         private readonly RestClient clientOSM;
         private readonly RestClient clientMQuest;
