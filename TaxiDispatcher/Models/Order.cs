@@ -11,7 +11,6 @@ namespace TaxiDispatcher.Models
     {
         public TrafficPoint[] TrafficPoints { get; set; }
         public string Client { get; set; }
-
         public double Distance { get; set; }
     }
 
@@ -24,7 +23,6 @@ namespace TaxiDispatcher.Models
 
     public class City
     {
-
         public string Name { get; set; }
         public Location location { get; set; }
     }

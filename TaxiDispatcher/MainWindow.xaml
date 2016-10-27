@@ -4,16 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:conv="clr-namespace:TaxiDispatcher.Converters"
-        xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map" x:Class="TaxiDispatcher.MainWindow"
         mc:Ignorable="d"
+        x:Class="TaxiDispatcher.MainWindow"
         xmlns:map="clr-namespace:MapControl;assembly=MapControl.WPF"
         xmlns:vm="clr-namespace:TaxiDispatcher.ViewModels"
         Title="MainWindow" Height="740" Width="980">
+        <!--xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map" -->
     <Window.Resources>
         
         <!--
             TileLayers with OpenStreetMap data.
         -->
+        <map:TileLayer x:Key="Google.Maps" SourceName="Google Maps"
+                       Description=""
+                       TileSource="https://www.google.com.ua/maps/@{z},{x},{y}m/data=!3m1!1e3!5m1!1e1?hl=ru"/>
         <map:TileLayer x:Key="OpenStreetMap" SourceName="OpenStreetMap"
                        Description="Maps © [OpenStreetMap Contributors](http://www.openstreetmap.org/copyright)"
                        TileSource="http://{c}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -333,6 +337,7 @@
                         <ComboBoxItem Tag="{StaticResource Transport}">Transport</ComboBoxItem>
                         <ComboBoxItem Tag="{StaticResource TransportDark}">Transport Dark</ComboBoxItem>
                         <ComboBoxItem Tag="{StaticResource MapQuest}">MapQuest Open</ComboBoxItem>
+                        <ComboBoxItem Tag="{StaticResource Google.Maps}">Google</ComboBoxItem>
                         <!--<ComboBoxItem Tag="{StaticResource WorldOsm}">World OSM WMS</ComboBoxItem>-->
                         <!--<ComboBoxItem Tag="{StaticResource BingRoad}">Bing Maps Road</ComboBoxItem>
                     <ComboBoxItem Tag="{StaticResource BingAerial}">Bing Maps Aerial</ComboBoxItem>
