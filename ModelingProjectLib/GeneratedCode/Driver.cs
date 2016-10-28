@@ -15,7 +15,7 @@ public class Driver
 	/// <summary>
 	/// Паспорт
 	/// </summary>
-	public virtual string Pasport
+	public string Pasport
 	{
 		get;
 		set;
@@ -24,7 +24,7 @@ public class Driver
 	/// <summary>
 	/// Фамилия
 	/// </summary>
-	public virtual string Surname
+	public string Surname
 	{
 		get;
 		set;
@@ -33,7 +33,7 @@ public class Driver
 	/// <summary>
 	/// Имя
 	/// </summary>
-	public virtual string Name
+	public string Name
 	{
 		get;
 		set;
@@ -42,7 +42,7 @@ public class Driver
 	/// <summary>
 	/// Отчество
 	/// </summary>
-	public virtual string Patronymic
+	public string Patronymic
 	{
 		get;
 		set;
@@ -51,7 +51,7 @@ public class Driver
 	/// <summary>
 	/// Псевдоним
 	/// </summary>
-	public virtual string Nickname
+	public string Nickname
 	{
 		get;
 		set;
@@ -60,7 +60,7 @@ public class Driver
 	/// <summary>
 	/// Позывной
 	/// </summary>
-	public virtual string Callsign
+	public string Callsign
 	{
 		get;
 		set;
@@ -69,7 +69,7 @@ public class Driver
 	/// <summary>
 	/// Адреса
 	/// </summary>
-	public virtual IEnumerable<Address> Addresses
+	public IEnumerable<Address> Addresses
 	{
 		get;
 		set;
@@ -78,7 +78,7 @@ public class Driver
 	/// <summary>
 	/// Заметки
 	/// </summary>
-	public virtual string Notes
+	public string Notes
 	{
 		get;
 		set;
@@ -87,7 +87,7 @@ public class Driver
 	/// <summary>
 	/// Диспетчер
 	/// </summary>
-	public virtual DispatcherType DispatcherType
+	public DispatcherType DispatcherType
 	{
 		get;
 		set;
@@ -96,7 +96,7 @@ public class Driver
 	/// <summary>
 	/// GPRS
 	/// </summary>
-	public virtual bool GPRS
+	public bool GPRS
 	{
 		get;
 		set;
@@ -105,7 +105,7 @@ public class Driver
 	/// <summary>
 	/// Рация
 	/// </summary>
-	public virtual bool RadioSet
+	public bool RadioSet
 	{
 		get;
 		set;
@@ -114,7 +114,7 @@ public class Driver
 	/// <summary>
 	/// День рожденья
 	/// </summary>
-	public virtual DateTime DateOfBirthday
+	public DateTime DateOfBirthday
 	{
 		get;
 		set;
@@ -123,7 +123,7 @@ public class Driver
 	/// <summary>
 	/// Принят наработу
 	/// </summary>
-	public virtual DateTime Adopted
+	public DateTime Adopted
 	{
 		get;
 		set;
@@ -132,7 +132,7 @@ public class Driver
 	/// <summary>
 	/// Уволен
 	/// </summary>
-	public virtual DateTime Fired
+	public DateTime Fired
 	{
 		get;
 		set;
@@ -141,25 +141,7 @@ public class Driver
 	/// <summary>
 	/// Пароль
 	/// </summary>
-	public virtual string Password
-	{
-		get;
-		set;
-	}
-
-	/// <summary>
-	/// Разрешения
-	/// </summary>
-	public virtual DriverAccessSetting DriverAccessSetting
-	{
-		get;
-		set;
-	}
-
-	/// <summary>
-	/// Дополнительно
-	/// </summary>
-	public virtual DriverAdditionalSetting DriverAdditionalSetting
+	public string Password
 	{
 		get;
 		set;
@@ -168,7 +150,7 @@ public class Driver
 	/// <summary>
 	/// Сдал залог
 	/// </summary>
-	public virtual decimal PassedPledge
+	public decimal PassedPledge
 	{
 		get;
 		set;
@@ -177,7 +159,46 @@ public class Driver
 	/// <summary>
 	/// Долг залог
 	/// </summary>
-	public virtual decimal DebtPledge
+	public decimal DebtPledge
+	{
+		get;
+		set;
+	}
+
+	/// <summary>
+	/// Абонплата с заказа, гр
+	/// </summary>
+	public DriverFeeToOrder DriverFeeToOrder
+	{
+		get;
+		set;
+	}
+
+	/// <summary>
+	/// Номер телефона
+	/// </summary>
+	public IEnumerable<String> Phones
+	{
+		get;
+		set;
+	}
+
+	/// <summary>
+	/// По совместительству
+	/// </summary>
+	public DriverConcurrently DriverConcurrently
+	{
+		get;
+		set;
+	}
+
+	public DriverFeeMissingOrder DriverFeeMissingOrder
+	{
+		get;
+		set;
+	}
+
+	public virtual DriverLicense DriverLicense
 	{
 		get;
 		set;
@@ -189,28 +210,19 @@ public class Driver
 		set;
 	}
 
-	/// <summary>
-	/// Абонплата с заказа, гр
-	/// </summary>
-	public virtual DriverFeeToOrder DriverFeeToOrder
+	public virtual DriverAccessSetting DriverAccessSetting
 	{
 		get;
 		set;
 	}
 
-	/// <summary>
-	/// Номер телефона
-	/// </summary>
-	public virtual IEnumerable<String> Phones
+	public virtual DriverAdditionalSetting DriverAdditionalSetting
 	{
 		get;
 		set;
 	}
 
-	/// <summary>
-	/// По совместительству
-	/// </summary>
-	public virtual DriverConcurrently DriverConcurrently
+	public virtual IEnumerable<Address> Address
 	{
 		get;
 		set;

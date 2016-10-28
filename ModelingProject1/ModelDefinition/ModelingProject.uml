@@ -117,7 +117,7 @@
         Id="cfa9360c-2ce8-4db4-bc01-7e090922f38e"
         name="Client"
         isAbstract="false"
-        isLeaf="false"
+        isLeaf="true"
         isActiveClass="false">
         <appliedStereotypesInternal>
           <stereotypeInstance
@@ -161,16 +161,315 @@
               </stereotypeInstanceHasPropertyInstances>
             </propertyInstances>
           </stereotypeInstance>
+          <stereotypeInstance
+            Id="74866b22-b7ed-4757-9636-2531ed927971"
+            name="TextTemplateBindings"
+            profile="TextTemplateBindings">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9dd50867-7ea2-4f69-819a-f2453423ee8d">
+                <propertyInstance
+                  Id="b4531dfb-4613-48a0-ba56-9311b9eff77a"
+                  name="Alias" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f14a0bff-c1cf-48a7-96f1-33e896fa8cdc">
+                <propertyInstance
+                  Id="a1d78339-576b-45c9-a276-f756564b3b36"
+                  name="TemplateFilePath" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca9192b1-04a3-46d5-8573-2c9098932fe2">
+                <propertyInstance
+                  Id="fc893338-94f8-4b8a-bca0-99ded6f3e14b"
+                  name="ProjectPath" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c5ddd7d-d161-49e4-9bba-1acbf4834f68">
+                <propertyInstance
+                  Id="f042349e-e024-4c79-bac4-02c0cc8c8aa3"
+                  name="TargetDirectory" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="041a2cd9-46d2-4def-bb24-ee9d1f1f42d4">
+                <propertyInstance
+                  Id="885dbad5-0ec3-4bef-a1b9-f31a5c9e343c"
+                  name="TargetName" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77d0471f-b9f6-4e55-8238-f0384a8cb868">
+                <propertyInstance
+                  Id="7b2e3d08-8cf4-4bc4-a1e6-5f905ea3a25b"
+                  name="Overwrite" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="caf29c2f-c3be-4462-ae8b-7cbf74ada4dc">
+                <propertyInstance
+                  Id="7276034b-0cb2-4a58-8692-e2fd9ad1d390"
+                  name="Parameters" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="48ff5c3c-964f-4417-8c7c-5c8a5e1adfb4"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Status"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b6030e9f-4836-4319-8d62-6a81bda99f93"
+              LastKnownName="ClientStatus"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ec76b5a-0cb5-46c0-85d3-abc07eca9c28"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7694a9d-027b-49fa-9604-a1170e11d6ed"
+                  name="Status"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="59ae3c40-2a69-4311-af87-ad996d7f22a2"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName=" BonusForOrderType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3426f114-cbdb-4fac-9397-25742fd2154c"
+              LastKnownName=" BonusForOrderType"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5bbcff7d-53db-45d5-b390-6cbcac6fb18b"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="62b4aa51-09da-461c-aec0-36e2651d6606"
+                  name=" BonusForOrderType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="50747e5c-61da-41b8-86f4-c19a36a04e78"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="DiscountType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0c11ff61-f606-4b38-83d7-a82eddb5f86c"
+              LastKnownName="DiscountType"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b0597b6-7c51-4eb0-a212-629d9b449371"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d19e24a-a463-46a0-b57d-0db90473db27"
+                  name="DiscountType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ebef27d9-161f-4316-a772-7907e241882f"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Address"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2b1a76d6-0bcb-4f38-b391-657e91b5e035"
+              LastKnownName="Address"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77ed0b91-5054-484d-8add-97c2e9857b0f"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d4fcba43-06d5-45bc-a3cf-b7e1982697bb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f70c85f4-f585-4bb1-9b63-fa52d55ce01d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e6c8a1a-51ab-4f03-878f-11160bc9c37d"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3b9a5d8e-6e8b-473f-bece-f5008de5a9a0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8bf505a3-21ab-4004-9088-87a7db88dfe8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="576af9cc-9dfa-4048-9b2b-74fa568c816b"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Order"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c85dba82-4de4-489f-ab1e-8d557edcda29"
+              LastKnownName="Order"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c9c81dd-2225-4191-aebc-ca4b006f42bd"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9c5208d5-d11e-41fc-9b70-651d6a2cc001"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0cc279b9-8ac1-4b42-9840-8484af1e6b26"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="597a009e-55d4-4423-89e2-3ec421e29c79"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cfa6c53f-9478-44b0-9428-e2af800fa61b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dee27553-0c5c-454a-b388-cfab8e9c8c6f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="334a6d0c-5565-4924-a512-a2dd0eb29f62"
             name="Access"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
+            isOrdered="true"
             isUnique="false"
-            isDerived="false"
+            isDerived="true"
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
@@ -242,7 +541,7 @@
           <property
             Id="56ebdcd7-d66a-411d-b548-09a22033fcaf"
             name="Surname"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isDerived="false"
@@ -315,85 +614,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="807715f7-68d2-404a-9af7-d79642569c41"
-            name="Addresses"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Адреса</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d69dd508-6895-490d-9e07-b45281a4483b"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="da3da728-d7d0-47b0-bf22-ec017540e37d">
-                    <propertyInstance
-                      Id="06cb821a-6599-4dce-a705-db3f9d623c9a"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1d9ad411-f2a7-4683-8e8a-4f1ef99c7aeb">
-                    <propertyInstance
-                      Id="7572136a-c935-48dd-ba76-1ca695598592"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="715dbf8c-fa3d-442a-bcf1-2da8a03597d6">
-                    <propertyInstance
-                      Id="42f53a56-c47d-4917-88b9-4669b65493ef"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d83d8036-fb06-4833-b245-61d41e955894">
-                    <propertyInstance
-                      Id="80ae1376-3d77-4f49-bf01-581c9bc86669"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="67225ec3-dd78-40ba-b1ab-f2a8edbfbce9">
-                    <propertyInstance
-                      Id="ed172131-4352-45ac-9435-f37a95a3e6a6"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c198e7dd-38df-4c9a-aace-1e5561363dd6">
-                    <propertyInstance
-                      Id="01a7a565-8daa-4ae0-a139-c1446a521876"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c5a0fed8-4be3-4b43-b13f-fd73386b9fe0">
-                    <propertyInstance
-                      Id="bf846ab4-f42d-416e-8474-a7c683484778"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="f1ef3d39-57f2-4430-9c51-e4ed5a7e1d07"
-                LastKnownName="IEnumerable&lt;Address&gt;"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="184afbf3-630d-437e-bf19-83c9cf30c67a"
             name="ScoreName"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -469,7 +692,7 @@
           <property
             Id="2eaa1364-33ee-4d9a-8f31-8c17b9e76bc6"
             name="SubscriberNumber"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -545,7 +768,7 @@
           <property
             Id="1c12ff1e-5d04-4edc-a540-ad7187817d74"
             name="DateOfBirth"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -621,7 +844,7 @@
           <property
             Id="fc93eca0-520e-4235-87ab-a7af5e776ad8"
             name="Patronymic"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -697,7 +920,7 @@
           <property
             Id="8d089d54-3626-4954-aa1c-6f5c1e952e20"
             name="Name"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -773,7 +996,7 @@
           <property
             Id="5ae59c83-f45e-4edc-8052-f00252fe0f5f"
             name="Phones"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -847,85 +1070,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="d83b20db-200b-46db-8673-d5f38254ce2a"
-            name="Orders"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Подсчет заказов</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="24a5b5cb-c331-43c7-8e5c-73e6b6869aff"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e61beae2-3ae3-4fb5-9601-3bb0d4d2d162">
-                    <propertyInstance
-                      Id="d7c8a599-4e8a-478a-a14f-fa897b9f893b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5f31dea5-e26d-4184-a1fd-34a21ec164de">
-                    <propertyInstance
-                      Id="15ea2171-e239-4dfb-837d-fae3a673771a"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6b37e03c-0bba-4919-8adf-83e983664d62">
-                    <propertyInstance
-                      Id="595c1486-3e0c-457f-a22c-2c15fdf01be6"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dca67ce3-5d73-4419-9512-4ee2aab76a5a">
-                    <propertyInstance
-                      Id="57e2fe97-1e61-4694-8587-bfba5b1d1a30"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1375323-5c45-4749-8bbb-edbcb12675f6">
-                    <propertyInstance
-                      Id="683ebf52-180f-4d22-8cef-f2d05c325b86"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b35d878c-5146-4081-98c1-eebc8f7c803e">
-                    <propertyInstance
-                      Id="e74df594-4403-489e-9ef4-8e7b7b11f8ca"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4cc3b7a5-d3cf-4744-ad93-fef5e56400e9">
-                    <propertyInstance
-                      Id="f289e385-895e-4da1-99b1-92c65d4e1b1e"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="10ccc193-f1ad-4775-b1c2-653f944db9ec"
-                LastKnownName="IEnumerable&lt;Order&gt;"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="2467ffe0-a0ae-428f-80df-8d8d755d09aa"
             name="CountingOrders"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1001,7 +1148,7 @@
           <property
             Id="076a0345-8c57-4b94-ac1e-cfebf821847d"
             name="LastUseDateTime"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1077,7 +1224,7 @@
           <property
             Id="911a7e27-0742-4c3e-bbd2-a6b1aecd910f"
             name="Balance"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1153,7 +1300,7 @@
           <property
             Id="6dcebf22-a0b0-4935-be4f-5d8b3e99f6e7"
             name="MethodOfPayment"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1227,85 +1374,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="3a43d61b-2dbf-49ec-94f7-aaed780049c0"
-            name="DiscountType"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Тип скидки</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="06ae4437-311d-4fc2-8284-d68a66f04511"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="963116b5-fdd9-4a01-90f3-b8ffb48bf5db">
-                    <propertyInstance
-                      Id="01d07f3a-4dc8-4522-b204-4ab3115227c0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e5a1a781-2694-4f30-b83a-6908d159c53d">
-                    <propertyInstance
-                      Id="cbbd798d-b85b-486b-801e-dd6d9006d0de"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="86f567eb-d09a-47a0-88b4-428533ae0314">
-                    <propertyInstance
-                      Id="e5bc1764-1c1d-4d14-9952-3a7228b8be2e"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a84f0383-1cdc-4dc2-bb1a-a95b0f9e3298">
-                    <propertyInstance
-                      Id="b18c0a33-77c8-44ad-8028-5dbeeb403f71"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bbd3f40f-9745-47d2-8f26-1a5ac1670ada">
-                    <propertyInstance
-                      Id="0ae7abf0-9dde-42d0-845e-4a3110124d07"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cd5e5180-8756-4fb6-b167-b2d0684558c8">
-                    <propertyInstance
-                      Id="8521b5e1-c394-4d1b-a0b9-b6013534c2e8"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7f16c87b-2726-4f8d-829a-3a196cf4c84e">
-                    <propertyInstance
-                      Id="a0f6da1d-7f2e-4bd0-82a0-20e93dac5a05"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="42a09d8f-06e8-45ae-b3a1-fe5ba6eed663"
-                LastKnownName="DiscountType"
-                LastKnownLocation="Package_1658.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="17cc8f14-dd37-4462-8fd8-0e63482defec"
             name="DiscountValue"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1381,7 +1452,7 @@
           <property
             Id="07e61a6c-d2f1-421c-a978-58d3edc1a99b"
             name="CreatingDateTime"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1457,7 +1528,7 @@
           <property
             Id="f34ca9ef-90c2-4895-84f0-912d102bfd1f"
             name="NotesDriver"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1533,7 +1604,7 @@
           <property
             Id="0b7217cc-89c2-4504-9c2e-fccb0f2dfe9d"
             name="Notes"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1609,7 +1680,7 @@
           <property
             Id="72f254e6-425c-4cf3-b0cd-adcab1353127"
             name="Number"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1685,7 +1756,7 @@
           <property
             Id="9bb20e46-b845-44f9-a206-f238563b52ec"
             name="Occupation"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1761,7 +1832,7 @@
           <property
             Id="d37fc541-e352-4611-b6fb-c0d6f7d810fa"
             name="Email"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1837,7 +1908,7 @@
           <property
             Id="b50f5ac5-bc26-4edd-9303-f50cb5a0e52e"
             name="Blocked"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1913,7 +1984,7 @@
           <property
             Id="32e827f6-ab45-4f0a-a71a-861e3c823ab6"
             name="Voucher"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -1989,7 +2060,7 @@
           <property
             Id="df3f3ace-63f1-4e31-96e2-cbc5c04a16fe"
             name="Index"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2065,7 +2136,7 @@
           <property
             Id="a623dd03-070b-495d-846f-8bc76cecb051"
             name="Return"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2141,7 +2212,7 @@
           <property
             Id="c3cb61d7-2c96-485f-a33c-c1f1923304bb"
             name="VARMarkup"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2217,7 +2288,7 @@
           <property
             Id="f3b67d31-961e-42c8-a9b1-ee006d651c41"
             name="NotesGPRS"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2293,7 +2364,7 @@
           <property
             Id="81199477-3bda-4b22-973b-8692ef30bfba"
             name="BanOnTheChangeWebOrders"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2369,7 +2440,7 @@
           <property
             Id="40b08475-aa12-45dd-9e5d-beb0f7657236"
             name="BonusForOrder"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2439,158 +2510,6 @@
                 Id="a019f489-9159-4081-b082-9e5c228739b1"
                 LastKnownName="decimal"
                 LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="cc4547c8-9164-4dba-a0ed-ad0ebb2ab3fb"
-            name="BonusForOrderType"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Тип бонуса за заказ</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="5048546c-7daa-4e0e-8dd1-c5a04e53b69e"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4448c852-e2ae-40b3-91db-1f80f93e31e9">
-                    <propertyInstance
-                      Id="6deaa10b-e321-47ae-94da-758b034350db"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4a6727a9-9ed6-4695-b9d8-b7b460e4fa24">
-                    <propertyInstance
-                      Id="58d5a92d-a1d7-439f-b03e-1a548d38d6e1"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9ed6e8d2-7e55-4a6f-9348-339257fda899">
-                    <propertyInstance
-                      Id="7788bac9-2d3d-4d17-bc06-581db82afa8a"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f242ee60-55c2-4594-a0ce-648b590f18ef">
-                    <propertyInstance
-                      Id="96d30e7f-d0c4-4029-84b5-27c06ad8e1e0"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="626f0c96-6a5e-4769-8b19-27e8bbf983d5">
-                    <propertyInstance
-                      Id="4395901f-8b7e-4fdb-8321-488ac6c5f95c"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f60c0deb-fc36-49a8-b20d-526293f2a72e">
-                    <propertyInstance
-                      Id="9e0efd04-0b31-48cd-9140-3f2fa2d61ebb"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7b458a36-66a2-4c67-a752-951a1d365dcd">
-                    <propertyInstance
-                      Id="53043c8d-ac3e-490d-9fa4-00510275db22"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="27cca59c-1fbb-48a8-b3fa-fe6aa4f3bffc"
-                LastKnownName="BonusForOrderType"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="8922266d-b40b-408e-9be5-9a8a681f84f6"
-            name="Status"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Статус клиента</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="4efaf235-fc3a-4866-89d3-648471153b51"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fadbef8c-91f5-4e1b-9f3a-6b37a4e80de1">
-                    <propertyInstance
-                      Id="ee123ffa-9a6a-4ecb-a435-72df88440024"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f57c5768-9f85-465e-a263-0e4545e35363">
-                    <propertyInstance
-                      Id="d556b70a-7be9-451b-9648-894bd59987ec"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5180967f-9288-4ce4-881e-624ff9f05cc3">
-                    <propertyInstance
-                      Id="e02b2fc1-df97-446c-9ee9-0246182913f8"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b952b392-93bd-4c4d-90ba-1ba639d6f436">
-                    <propertyInstance
-                      Id="c71edcec-1072-44bc-bc39-00df84451704"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2066bfed-f3a8-478d-b514-5fa6b62c8832">
-                    <propertyInstance
-                      Id="f4c2da23-e77e-4594-a7f3-de379a61aee1"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ed7ce618-7473-42da-bc4b-1fbc4e9ae41c">
-                    <propertyInstance
-                      Id="6e5a43d0-793b-47f3-a5d1-c59ee42cfc8d"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c19038f9-806b-45c9-b4d6-4c194de9baba">
-                    <propertyInstance
-                      Id="1a2200eb-3590-43cb-8d61-a8eaa8969323"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="6084d7b8-fad6-4187-9738-768ff38e5ab8"
-                LastKnownName="Status"
-                LastKnownLocation="Package_1658.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -2676,11 +2595,572 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d2cc4174-5776-4398-9f83-b7145a3a17ce"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverLicense"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="68f5e9ed-233a-47be-a7fb-668c3ab99836"
+              LastKnownName="DriverLicense"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f37740fe-a1ab-435b-9170-e20f0d8f18bc"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6663a86a-116b-4103-b1a6-630544695994"
+                  name="DriverLicense"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e57e7a6f-83a8-4ab0-a0f3-28846206d984"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverPersonalCommission"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7f3e66b5-4827-431f-b8aa-fb2a03eb377a"
+              LastKnownName="DriverPersonalCommission"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fecaade8-b1bc-4e48-97d7-1693000fb4de"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6c8896a-4294-40f3-b673-f05870620d42"
+                  name="DriverPersonalCommission"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="408e682a-aa14-46d5-8a8c-2225ac47fd05"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverAccessSetting"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3a82773c-8662-4ae2-b15d-b472f2f3b7a9"
+              LastKnownName="DriverAccessSetting"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b27ea71-f1da-4cb6-b504-0bc40e892616"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a03ae925-6166-422b-9d7c-728ea93412f4"
+                  name="DriverAccessSetting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6eeaa118-db3b-4b1e-abab-3cdfbba78069"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverAdditionalSetting"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="60c38d6f-dcbe-4d2c-8d28-14f6e88b2f95"
+              LastKnownName="DriverAdditionalSetting"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ec8207e-41d8-4769-a0c7-1a91dad504ce"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99b1ec8b-2c46-4152-acbc-169b92206b7c"
+                  name="DriverAdditionalSetting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7d56e27c-9e00-4ad7-91d6-037c19b1b82e"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="Address"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2b1a76d6-0bcb-4f38-b391-657e91b5e035"
+              LastKnownName="Address"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94b5efb5-8fcc-417c-8f57-37a0493d93bc"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="864d0aa2-099b-4232-b755-b7e7b73c3bb8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="81f4f5b2-6221-4841-b94e-05b6d53dda13"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8e9a235d-990e-45c6-8e5d-dfcf98e44872"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9d900fbd-9a84-4ebd-90b9-358a727acefe"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6dbb321f-95e9-4f4e-bb7d-f5fdc38bddce"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ee643fd2-0631-4f8d-9cdb-301b213773b4"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DispatcherType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3d38b1c7-e807-480f-ac56-3d21c90948cf"
+              LastKnownName="Dispatching"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71dfc899-f0f4-4c1e-80b1-d1271d0faf50"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7a8ef63-c8b2-402a-81f7-11d4ff087379"
+                  name="DispatcherType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4a8858be-dac7-4b09-9929-845ab3000125"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverFeeToOrder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="31ced898-0394-443d-a306-dd561ff7c39e"
+              LastKnownName="DriverFeeToOrder"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d602c14-3e5a-4126-98ea-9e66aa66eb34"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ae0a6ad-1507-4a31-ab57-f8f425fb5286"
+                  name="DriverFeeToOrder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fd0359b7-813f-49cb-998b-13619c38905f"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverFeeMissingOrder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9056bb24-263e-426b-a8bd-38f2a5172aac"
+              LastKnownName="DriverFeeMissingOrder"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bea527e-3a49-4f72-a967-df30f2f1457b"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="726e05cf-6230-4a02-8fdb-5ee5334732e4"
+                  name="DriverFeeMissingOrder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6abdae3f-ff7c-412a-b77e-127e78a910bf"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="DriverConcurrently"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a8e1ce85-226c-4596-a109-b8d7cef04ac6"
+              LastKnownName="DriverConcurrently"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3140b37-45ba-4b2b-987e-695056c883f8"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cd4c31b-b988-4d56-aaa7-0ad6d03baa3c"
+                  name="DriverConcurrently"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="703584d0-2288-4002-a87f-770edd836db9"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="Order"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c85dba82-4de4-489f-ab1e-8d557edcda29"
+              LastKnownName="Order"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1e7525c-1329-4dca-a1d7-84c41c4b2bb1"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ba5c31e4-ef4c-4304-a160-7aa05fdb0ae3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ae6200d3-b73a-40c7-bdb0-291932fadbe0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58a743b9-ddb2-48b9-9196-7006b6ae1895"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5f0bcfab-c702-422f-9813-058c78549160"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="96768bec-ff65-460f-9cc6-142625a0196b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eead3bbb-630b-420b-95b1-7e432bab60b9"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="SettingsOrdersVisibility"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2a39cc86-e6c0-4a55-8caa-4075a555c2d8"
+              LastKnownName="SettingsOrdersVisibility"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1dbf0085-9380-48e5-96fd-5363ea621fd3"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d421c9e-aa40-4a10-a8e6-c8e951c28cf5"
+                  name="SettingsOrdersVisibility"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4533a144-1af2-4475-8732-d21324143c02"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="SettingDriverAccess"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="539bc30a-a4c0-4a1a-bdbf-4e5f22422b50"
+              LastKnownName="SettingDriverAccess"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d65d0dd3-f500-4ae2-ad89-5d585e1a19f5"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1979c6c1-8fff-424c-82df-dde2dd492e6a"
+                  name="SettingDriverAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="58336643-4061-4b16-a638-a581b0cf1aec"
+            isDerived="false"
+            sourceEndRoleName="Driver"
+            targetEndRoleName="RulesOfMutualSettlement "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="71974d74-7bf9-414c-adfc-32f592b61141"
+              LastKnownName="RulesOfMutualSettlement "
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b436dc22-f9fe-4ba1-9883-892dfe695d19"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3535b412-db14-4eee-9cf2-93e2a8bf716e"
+                  name="RulesOfMutualSettlement "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="015b6dc7-de81-452d-873f-04b61755f374"
             name="Pasport"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2756,7 +3236,7 @@
           <property
             Id="eab56b89-b713-47c5-903a-6a9d628f6678"
             name="Surname"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2832,7 +3312,7 @@
           <property
             Id="efa8a31f-3666-4aa4-9b47-625eabd38918"
             name="Name"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2908,7 +3388,7 @@
           <property
             Id="4d004552-84ae-4d54-ac21-f4e497d71c36"
             name="Patronymic"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -2984,7 +3464,7 @@
           <property
             Id="dec41ed4-7551-4d70-b518-8a3dd2ce9dc1"
             name="Nickname"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3060,7 +3540,7 @@
           <property
             Id="39f8766a-9802-4c54-9539-edf66503589c"
             name="Callsign"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3134,85 +3614,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="7a5dbc7c-169c-47ea-8054-3b9624b577b5"
-            name="Addresses"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Адреса</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="7e3df860-0a17-48cf-82fb-371d318494d7"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a3368d08-5691-41ce-b2d1-2e6ce25df8e1">
-                    <propertyInstance
-                      Id="a8c53df0-c73d-4458-a585-35438bd85d1b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="726e7d25-2dee-48ca-bc21-f68b11d51ca8">
-                    <propertyInstance
-                      Id="530766d4-a568-4842-bdc5-5387dd88dc95"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="31e0735d-bb93-4139-a1ef-63467ff05672">
-                    <propertyInstance
-                      Id="89ee166d-7b41-4988-a74f-605dfe7e8dc8"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bb8c78fe-5fe3-4d92-b5fb-573739e309b5">
-                    <propertyInstance
-                      Id="ec30cad4-28d6-4970-8033-b048aa6acdc8"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9aa59429-95ac-48be-ba10-51ae34860c13">
-                    <propertyInstance
-                      Id="804f894d-ab78-4740-8c46-580ab3d8ee31"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b5af3542-479c-47c5-84f3-5a04f2c9176e">
-                    <propertyInstance
-                      Id="8bc4cf2c-e793-4cbc-bdc3-544b2d0d2d8d"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b76d6f7a-ed6e-420b-baf0-a7678a02bfd5">
-                    <propertyInstance
-                      Id="06c1b972-4189-4241-9d03-5b9cda86129e"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="f1ef3d39-57f2-4430-9c51-e4ed5a7e1d07"
-                LastKnownName="IEnumerable&lt;Address&gt;"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="306e65c0-82f3-414d-aaa3-8366fa78d2d4"
             name="Notes"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3286,85 +3690,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="8bc4a362-4ca7-4638-80c7-58789219b882"
-            name="DispatcherType"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Диспетчер</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="8d708265-2a6f-48a4-8174-f28adff0cde9"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c0f7e2d0-65cb-4201-a61e-258c49febb9b">
-                    <propertyInstance
-                      Id="e2d4310c-28bc-41d5-94d5-6f2b235800db"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="519a5924-f440-40ce-83b3-b16e33e65a98">
-                    <propertyInstance
-                      Id="ecc2d5fa-5892-4e3f-ad73-39e7c7e3c257"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b6b51346-8dea-490e-a733-ca6ac2455285">
-                    <propertyInstance
-                      Id="1e31e2ca-c423-4e7e-a73f-328acd9558f1"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="255a4305-cbce-4c82-803f-1d58a9102532">
-                    <propertyInstance
-                      Id="5fa47a4d-2b50-4171-a8e8-bcd64e813717"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a9ca436d-a2e9-4be0-b2ba-59701bae77fd">
-                    <propertyInstance
-                      Id="cbd3f5ba-fe0c-44ac-8cab-1270c067d9cf"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="53d2812f-4f67-4144-8b47-2fc48ca6908b">
-                    <propertyInstance
-                      Id="c86cc0be-e750-4b75-a2df-24730010173c"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="86468cb7-1676-437b-b39c-06aa26c738cb">
-                    <propertyInstance
-                      Id="8e5aa4e9-3368-47ae-85d9-09ead1fb42c1"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="271bde49-adf3-4fa3-9ae4-f4007162469b"
-                LastKnownName="DispatcherType"
-                LastKnownLocation="Package_1658.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="ddff96fa-374c-426b-a9ba-f357376f749d"
             name="GPRS"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3440,7 +3768,7 @@
           <property
             Id="c7ba186a-5b22-4819-86ff-1bc3c1c540f6"
             name="RadioSet"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3516,7 +3844,7 @@
           <property
             Id="02e78e97-f5c7-4d2a-b0da-d55859ba50e1"
             name="DateOfBirthday"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3592,7 +3920,7 @@
           <property
             Id="29f4488f-7443-4097-8dd0-8b0801bc7579"
             name="Adopted"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3668,7 +3996,7 @@
           <property
             Id="e83d1d17-e6a8-402a-9e25-ddb59fea4e3d"
             name="Fired"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3744,7 +4072,7 @@
           <property
             Id="fde84d16-0134-4bcd-a21b-133fea6c89fd"
             name="Password"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -3818,161 +4146,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="24a73931-f528-4eda-9c68-cb96016c8d12"
-            name="DriverAccessSetting"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Разрешения</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="35723032-4b3b-4c53-acc6-277af9892041"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="83affa6b-1d73-4365-b52d-40d515c293a0">
-                    <propertyInstance
-                      Id="60d05a8d-dfbb-482b-bcdc-ffe6ae288c4f"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="406b75ce-2bae-4eb4-b9b0-981893953c40">
-                    <propertyInstance
-                      Id="d2e10cfe-eae9-455d-990d-14934473035e"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5e1fb705-ac56-44ab-ae8b-b9eef0d5550c">
-                    <propertyInstance
-                      Id="e3ce843a-fbf0-4ead-915a-cb87cb908fe6"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="79192043-e1a2-44e0-bd31-42f712c68e4c">
-                    <propertyInstance
-                      Id="c1c9417b-db33-4333-a1e8-522812e7acad"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b64d355e-ab2c-475e-a5c1-d9cdebcf2112">
-                    <propertyInstance
-                      Id="93bce1a6-4f90-4175-87e5-d63bd273ac83"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ef41e058-02eb-40d0-9fbd-3bca60925cf9">
-                    <propertyInstance
-                      Id="c8ddda38-7b30-4d34-b4d2-caf94294c88d"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6bcc9ce8-9130-4d37-8b2a-ae20b9e7b357">
-                    <propertyInstance
-                      Id="f45c7137-3639-4bbe-a682-d1067af95979"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="3a82773c-8662-4ae2-b15d-b472f2f3b7a9"
-                LastKnownName="DriverAccessSetting"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="72f93426-c41f-4652-8519-9e474834e230"
-            name="DriverAdditionalSetting"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Дополнительно</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="55592d91-12b7-412f-9728-59043ef19473"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1d58256a-f426-446d-aebb-fed05e0d49a0">
-                    <propertyInstance
-                      Id="9feeecd8-4c80-4c92-ad0c-b65ec561e782"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="15422bd2-31c6-456c-a636-eb4053d3a00c">
-                    <propertyInstance
-                      Id="dde62025-1c8c-4aa7-b60b-184ee836203e"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a914920d-5eaa-487e-afdf-bf4efd3a1831">
-                    <propertyInstance
-                      Id="e71bb6fc-1d60-4165-8170-ed5f199b6ee6"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4357e68c-c033-47fd-8bf2-e7cc7267b99f">
-                    <propertyInstance
-                      Id="84d6c62b-882b-4768-aa7c-f6de329fc890"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="07322549-9396-4323-8b65-8ad9772ec76e">
-                    <propertyInstance
-                      Id="d548a612-b835-481e-855e-cc4786d0b5cf"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="eddcc91d-11cd-4497-ba47-7c1db38cc9ab">
-                    <propertyInstance
-                      Id="35e9e036-d36e-43e8-9f50-327d00dd52ca"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e59f12a0-aad7-4b21-807c-efedbecb3994">
-                    <propertyInstance
-                      Id="79759875-4f5f-4bc3-8339-53ec9dd68270"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="60c38d6f-dcbe-4d2c-8d28-14f6e88b2f95"
-                LastKnownName="DriverAdditionalSetting"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="821bb879-8dcc-4ef6-ab67-77fb64bfddad"
             name="PassedPledge"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4048,7 +4224,7 @@
           <property
             Id="5e172ac5-a9ad-450e-a2a9-f158e3bd5e7e"
             name="DebtPledge"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4122,160 +4298,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="aa72fe52-8308-42c1-9372-7de95345f660"
-            name="DriverPersonalCommission"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="93a76cd4-c2fe-449d-907f-58421af27a5d"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9fe7aaed-9169-4701-9966-6ced5d6edcf2">
-                    <propertyInstance
-                      Id="bfd80b92-a246-4cc0-9235-519824c107bf"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="27230d6d-afda-4f48-b1c8-70f1e1710097">
-                    <propertyInstance
-                      Id="0d6a29df-2e88-4293-8370-298ea896de0c"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9ed24273-94b0-44ff-8e80-720a1b8ea01b">
-                    <propertyInstance
-                      Id="25500a4f-9a32-40a7-88be-e88bc346646e"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f1279747-607c-4274-b89f-861be7a8d0a4">
-                    <propertyInstance
-                      Id="ab038cda-7208-477d-932a-cdc488e21e5a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="74c73491-72e1-400d-ae21-1ce23ded5714">
-                    <propertyInstance
-                      Id="3ec86f75-d62a-4509-a73a-7a481e8e9b34"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8fb21c60-b562-42f6-a900-3337e51d14b1">
-                    <propertyInstance
-                      Id="ea30c646-11bf-4b01-96f9-4f8ec1b12ce2"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ef32e33f-f2c3-4526-abd1-34abab5701b3">
-                    <propertyInstance
-                      Id="4e95b0e2-6bc8-4ce2-9d4a-f2150e265162"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="7f3e66b5-4827-431f-b8aa-fb2a03eb377a"
-                LastKnownName="DriverPersonalCommission"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="059c3b14-9f42-4978-a561-c18db7d518cd"
-            name="DriverFeeToOrder"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>Абонплата с заказа, гр</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="339fc403-ff8c-433b-b432-fc94f3f84797"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="947c5d0f-0e72-4af5-ab08-9923d2a56c02">
-                    <propertyInstance
-                      Id="acd455fd-f5cd-4d52-96e8-f2478bbb947c"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="062dd810-6edd-4559-a604-5f8c7ed0da36">
-                    <propertyInstance
-                      Id="b9a926f0-bd3d-435f-b05b-b953cd99d3b8"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4537952e-4637-433e-8272-a7ebbcb40c32">
-                    <propertyInstance
-                      Id="fa999eab-987e-4653-bb19-4ca128714a10"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d09514a8-b7a0-4b9b-9981-acf0dde5a15b">
-                    <propertyInstance
-                      Id="ded0d4a1-fa8d-4f6b-8cbe-6edaea33cd14"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7390c39d-d834-46bf-bd13-9d7192e6c168">
-                    <propertyInstance
-                      Id="e6bf2089-c7e5-4034-9cfc-2b3fdf577019"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="efe70e1c-2264-4eec-b21a-3114065cb02d">
-                    <propertyInstance
-                      Id="7e3d274f-58e8-4934-9354-eae2ede9c5bd"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="52a91635-3f4c-4dcf-aaad-33ddb884b82d">
-                    <propertyInstance
-                      Id="710153da-e6aa-4e74-ab7e-b894d9019914"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="31ced898-0394-443d-a306-dd561ff7c39e"
-                LastKnownName="DriverFeeToOrder"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="3447980d-179d-4693-a80e-3fcde38afa1d"
             name="Phones"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4349,8 +4374,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="6437936c-b72a-4c64-90ca-6f114c3cbb83"
-            name="DriverConcurrently"
+            Id="2aa4d4fe-efe8-4b50-a3a7-6a0bdc21513f"
+            name="Dispatchings"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -4359,68 +4384,11 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <description>По совместительству</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="16f2f286-59b5-4701-a46d-3444d7ad65ca"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0384a24a-feed-40b8-9673-bd51db843fbc">
-                    <propertyInstance
-                      Id="fd790dd4-0fe4-4f6c-b87d-831e9abefe60"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="eb6dcc67-a49c-4139-97a7-58501e0cd58f">
-                    <propertyInstance
-                      Id="f7eb479d-6ad8-41a8-af17-7f0799e86e18"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="70f2da0a-4788-4441-8230-dd529da8fad5">
-                    <propertyInstance
-                      Id="55314dd0-0a90-438a-823c-5c3fc6518ee5"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c56c907f-32f4-4d8d-90ce-4daab955ea63">
-                    <propertyInstance
-                      Id="61a2fcf0-d563-440e-b9c1-801920b50b12"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fa0b12d4-08d2-48bb-bde3-64e2acd84f03">
-                    <propertyInstance
-                      Id="37919b01-e2c7-4c60-ad19-b3c235c5612e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0c6557e7-3b71-41a8-a788-999c30acf0d8">
-                    <propertyInstance
-                      Id="9b685b79-2afe-478c-b16e-d21b50c11165"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9c2abc7f-76eb-4a67-98e8-c71114fc5ea8">
-                    <propertyInstance
-                      Id="31dc3e1e-801d-4d7e-8253-7da134dacdbd"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
+            <description>Диспечерская</description>
             <type_NamedElement>
-              <classMoniker
-                Id="a8e1ce85-226c-4596-a109-b8d7cef04ac6"
-                LastKnownName="DriverConcurrently"
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
@@ -4595,7 +4563,7 @@
           <property
             Id="60320a81-ade0-4286-8852-1847b508ce3e"
             name="SetInSector"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4671,7 +4639,7 @@
           <property
             Id="1a75e24a-26e3-493c-9371-b6157c8c3875"
             name="AutoOrderSectorPOPOrders"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4747,7 +4715,7 @@
           <property
             Id="1a857bbc-53b0-4091-8439-10010f91206e"
             name="AutoOrderByGPSPOPsOrders"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4823,7 +4791,7 @@
           <property
             Id="66562d64-79d1-449d-af23-95f518476997"
             name="AutoProductionToOrderOnGPSHisOrders"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4899,7 +4867,7 @@
           <property
             Id="fb1b8098-5a2e-4fcb-a1bb-d1c099107b19"
             name="AutoAnswerPhone"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -4975,7 +4943,7 @@
           <property
             Id="3af077ba-7cb9-4a7a-b4de-9d0d8d17a4b8"
             name="PaymentOfFeesThroughTerminal"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5051,7 +5019,7 @@
           <property
             Id="f8c3b052-6125-4bfa-9148-35f5d94659bd"
             name="ConferenceConnectionWithClient"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5182,7 +5150,7 @@
           <property
             Id="80c3c50f-2b77-4d51-94e8-f109792f07dd"
             name="AutomaticallyPutTheDriverInTheSectorOfDestinationByGPS"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5258,7 +5226,7 @@
           <property
             Id="e340c761-9869-44aa-9a6b-656e9591ab90"
             name="AutomaticConversionOfDebtTheDriverOperatesOnPrepaidBasis"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isDerived="false"
@@ -5333,7 +5301,7 @@
           <property
             Id="d43c87ab-b705-4803-8e55-001ca2779e20"
             name="CommissionAccrualFactor"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isDerived="false"
@@ -5408,7 +5376,7 @@
           <property
             Id="45240eda-b3d3-4fb1-9e0e-07d087f1bd20"
             name="PayingIntoTheIllRepair"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5484,7 +5452,7 @@
           <property
             Id="99c4f77e-40d1-4169-b580-34596e7828d1"
             name="LimitDebt"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5560,7 +5528,7 @@
           <property
             Id="cc1deff1-d1e4-4893-adcf-7dca0fecf348"
             name="ActionInExcessOfTheAmountOfDebt"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5638,7 +5606,7 @@
           <property
             Id="e0736dd1-b2ff-4c88-8ce0-37f61a789cb7"
             name="DoNotPayPenaltyForTheRefusalOfYourOrderFrom"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5714,7 +5682,7 @@
           <property
             Id="af55c19f-e1b1-4b18-89ff-2df7bdd145f5"
             name="DoNotPayPenaltyForTheRefusalToImportOrder"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5790,7 +5758,7 @@
           <property
             Id="4b1b1371-591a-4b3f-9078-d4d98ac400ba"
             name="DoNotPayPenaltyForTheMorningOrder"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -5953,7 +5921,7 @@
           <property
             Id="bcd9da83-72d6-4681-ac77-b4410f26a2b4"
             name="CashYour"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6029,7 +5997,7 @@
           <property
             Id="e2bc22af-04e5-46f1-b36a-8d72ce398b12"
             name="CashlessPaymentsYourValue"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6105,7 +6073,7 @@
           <property
             Id="6638cf3e-6ba6-41f4-ade8-655bb7cd0367"
             name="CashlessPaymentsYour"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6181,7 +6149,7 @@
           <property
             Id="cf1452c4-83d8-4a9d-916e-7f86f392a961"
             name="CashYourValue"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6257,7 +6225,7 @@
           <property
             Id="9d862a08-9d1a-40f9-8494-9a1f4f1364c3"
             name="CashlessPaymentsImport"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6333,7 +6301,7 @@
           <property
             Id="9ef4283d-ae26-464d-8a6e-1bffe4172087"
             name="CashlessPaymentsImportValue"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6409,7 +6377,7 @@
           <property
             Id="c5480b5a-c5cf-413a-9a4a-18d646e5c059"
             name="CashImport"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6485,7 +6453,7 @@
           <property
             Id="8b73601f-f6ba-4019-8f27-d3fa8c13fa91"
             name="CashImportValue"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6621,7 +6589,7 @@
           <property
             Id="0365f4b2-9fd5-41f7-8de4-7b99f9c8ebac"
             name="Your"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6697,7 +6665,7 @@
           <property
             Id="391f17a2-eb1d-4a09-935b-b1f853775f95"
             name="Import"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6823,86 +6791,91 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="8d8c178d-0393-4637-bf60-f07e5c005942"
-            name="City"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
+        <targetEnds>
+          <association
+            Id="d5b92a8a-ba6b-4bd9-81e1-5390e31f6d3a"
             isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="fb5b5151-6dc1-421c-934b-6cdbb36a8cc2"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5e95ebbb-4372-423f-b8dc-6fdd1d1223d6">
-                    <propertyInstance
-                      Id="821661f2-e43c-4ff6-9578-6fcd25c1ffcc"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0ee8f481-4ca7-448f-97f5-c1b9a5cfd7b9">
-                    <propertyInstance
-                      Id="ad56813c-69f5-49bb-ae00-edac23b7a96f"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c501e95d-543c-46ce-9e5f-1974d823cf55">
-                    <propertyInstance
-                      Id="cdf7db65-8cae-45a4-af23-d7cc81a8baad"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="50105f38-e77e-416b-8677-7df3277d4d0e">
-                    <propertyInstance
-                      Id="52369fa3-cb37-49a0-88b1-de6d67c09963"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="60ce47ad-c7d1-42ba-9ae6-78c7ce306eb7">
-                    <propertyInstance
-                      Id="d1b55d5c-f399-473d-85f2-01a4eaf73e11"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9fef17df-cf6e-4173-b7c6-5c866e042bd8">
-                    <propertyInstance
-                      Id="10b53ea5-3a3e-4405-b704-6c36f0acab12"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0e93b67f-b2fc-4c95-aca6-c0d584e7956f">
-                    <propertyInstance
-                      Id="e012ff5c-117a-421e-bda7-72ea99b5f751"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="907ee304-d9b2-41fe-b3fc-8307eca3146c"
-                LastKnownName="City"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
+            sourceEndRoleName="Address"
+            targetEndRoleName="City"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4d86fec3-33ef-475b-a34d-94bf6b2516e8"
+              LastKnownName="City"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="092cbb04-4f7b-4257-94fa-30311e0e12d0"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fe5298b-49c1-42ac-87a6-d88bf3493882"
+                  name="City"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9c20821e-ab0b-458e-a231-8a41fcc3f460"
+            isDerived="false"
+            sourceEndRoleName="Address"
+            targetEndRoleName="Street"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6469a08e-f1c3-41e0-94fe-1a7d0c9ff3a2"
+              LastKnownName="Street"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65e7f637-cd42-456b-9c51-d99916b4d2b6"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3ee20c2-a404-437a-986e-5d07e7b64ae9"
+                  name="Street"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
           <property
             Id="bc2f391c-d819-4c55-a5d6-dd653242ff16"
             name="Street"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -6977,7 +6950,7 @@
           <property
             Id="038e0b29-cfad-478e-854d-6637532d51d6"
             name="Flat"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -7052,7 +7025,7 @@
           <property
             Id="f8b43eba-2a6e-4b65-8a13-26bde14f9a81"
             name="FrontDoor"
-            isLeaf="false"
+            isLeaf="true"
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
@@ -7267,6 +7240,24 @@
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                 LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="63c7d339-d279-4643-9efe-5c23820444fb"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="2b1a76d6-0bcb-4f38-b391-657e91b5e035"
+                LastKnownName="Address"
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
@@ -7586,6 +7577,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>Начисл. При отсутсвии выпол. Заказов</description>
         <appliedStereotypesInternal>
           <stereotypeInstance
             Id="671442d3-b093-43db-b827-fa856c55bb60"
@@ -7629,6 +7621,236 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a58d348a-a9ae-4386-a4d3-16175455b91f"
+            name="SubscriberFee"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Абоплата</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8cc6ca7-4f6d-4878-96b2-dd4831da1a45"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77d6da21-3093-4f45-a930-85e2a6e662a4">
+                    <propertyInstance
+                      Id="867af3cd-48d6-4219-96a0-7579b8e76499"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d86bab86-a3c9-44de-b315-5a1e0245e0b1">
+                    <propertyInstance
+                      Id="7fdd3b4a-80a0-40ca-a4d1-7717ccaf86ca"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c90db9d-3c24-497d-a59a-dab6a16ff0e2">
+                    <propertyInstance
+                      Id="c07cbfe2-48c2-4421-b774-660c0ed29561"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5cf4f73-32f8-4b50-b6e6-c6dbe45171c8">
+                    <propertyInstance
+                      Id="ff7ed06c-d92b-4be8-9eb9-349a2ae9f5d7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91d6f02b-05a1-4c75-9e37-38879593dc32">
+                    <propertyInstance
+                      Id="314d512d-fd18-4eef-9628-9319b6daa7b1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="890831f7-baed-406f-a23f-66168ed492cc">
+                    <propertyInstance
+                      Id="32c38afc-7872-4f5c-8548-b01603c9cfb5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd0bf106-6cf2-4a02-aae0-7b93406be0ff">
+                    <propertyInstance
+                      Id="28db0a0d-1cee-46af-a0d9-804848822e1a"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e4d45d99-e22f-4ce0-ace6-b583a4fc83fe"
+            name="Radio"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Рация</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f90edb9d-9de5-4159-a9cc-25cf8179f4b9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a20d247-db1a-4b9b-8e2e-8096e5eb7862">
+                    <propertyInstance
+                      Id="527444a9-4617-4de3-a597-c2e8981f0746"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c8b5846-e89f-4526-9a53-b4ae67b7d07e">
+                    <propertyInstance
+                      Id="35d6c155-e404-402b-afb3-c379a8b0fac5"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56c188b8-dea8-4977-90f3-d03c5a57b5f7">
+                    <propertyInstance
+                      Id="397d13dd-0b6f-4b40-9d27-99e656469a0d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8c09538-5bc9-4bfa-a2e3-59d621b45532">
+                    <propertyInstance
+                      Id="ad106ee0-5e0f-43ec-b7ae-8e1af20bed06"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9104a510-390a-4aa5-b1c5-cc376fc719f7">
+                    <propertyInstance
+                      Id="801ffe83-df3a-41c2-a9f2-9bb6192c131d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56670cfd-5345-4ad9-b85f-3eeaf0914ba1">
+                    <propertyInstance
+                      Id="b17c4403-59ae-4f17-a576-5004f1fd16e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f274f114-ba1e-4e59-b880-cadc8f499345">
+                    <propertyInstance
+                      Id="d9cf00ee-588a-436f-9856-06451ba9fee5"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5d6ba71c-c7cf-49fe-be8d-954a679d7ef6"
+            name="Rent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Аренда</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="424b7a45-1bf5-49bc-99a4-e9fb728a259c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e19710ba-4128-4f28-97d5-e3420dc4ab64">
+                    <propertyInstance
+                      Id="9e8b7b76-3200-4453-9278-441ca90571b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c942bad1-3954-496e-ab01-879cc1d03fb9">
+                    <propertyInstance
+                      Id="2355e95c-ef03-400a-b37a-031ea92e23c2"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51af5fdf-44cf-4cba-b785-5fa4b4d559f7">
+                    <propertyInstance
+                      Id="de12aa24-c2fa-426f-9848-b8d9bc044044"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84cd7bf9-9c63-42d0-9a8d-b3595c818020">
+                    <propertyInstance
+                      Id="4a49d178-6833-433b-a10d-bd236b9de260"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7356ec2a-2e79-481d-b4bf-4158994ee70b">
+                    <propertyInstance
+                      Id="a6e49dfb-14a3-4df4-b0d3-d462faa4c034"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ce8fc5d-5bea-43e5-9276-56ba0db7e026">
+                    <propertyInstance
+                      Id="78a3028d-271e-45c4-8f06-54c96a0960c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5721418c-c720-4a19-959f-10d5e5f116db">
+                    <propertyInstance
+                      Id="01b921e2-2391-41b4-bd01-338efb9846f2"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -7638,6 +7860,9 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>Автоматически закрывать водителя
+Видит только безнал 
+Не видит перекидку нал</description>
         <appliedStereotypesInternal>
           <stereotypeInstance
             Id="fc6bce39-247e-4a90-9d45-847c2031991b"
@@ -8284,7 +8509,7 @@
     <packageHasNamedElement>
       <class
         Id="b6030e9f-4836-4319-8d62-6a81bda99f93"
-        name="Status"
+        name="ClientStatus"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8413,7 +8638,7 @@
     <packageHasNamedElement>
       <class
         Id="3d38b1c7-e807-480f-ac56-3d21c90948cf"
-        name="DispatcherType"
+        name="Dispatching"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8658,6 +8883,1727 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7d88a7d3-f27c-47ef-b776-d29ad01cf547"
+        name="DriverServiceType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Рация	
+Абонплата	
+Путевки	
+Аренда	
+Охрана	
+
+</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4a49e0fe-bb8b-4365-89a5-0e8eb1547f63"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10465127-5567-4ae1-b972-d1c0a83e5ea2">
+                <propertyInstance
+                  Id="a2a29d11-c633-4904-8e4f-ebd29ad34660"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="671ee261-1d04-4beb-9221-dd286b0425c1">
+                <propertyInstance
+                  Id="87e968d4-33c3-4e07-9293-b3c855d298ea"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f9a0e0d-ddd1-419a-a3c6-ee1a81721ff9">
+                <propertyInstance
+                  Id="5e00c66e-96a4-4128-a366-8ce76f178f22"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="24bb5987-78f3-4a51-95fa-4a25c8b5b96e">
+                <propertyInstance
+                  Id="027132b2-7213-46db-ae29-72d67046d104"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91669867-ed09-41c7-bdd2-9fb613465ceb">
+                <propertyInstance
+                  Id="b69a1920-5973-425a-8be2-7dbfb1533780"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="9f97c462-c2b5-4e68-ad82-d5d3f72fae5f"
+            name="Name"
+            isLeaf="true"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9dda21e3-1511-45d0-b638-66250879c39d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ec41176-5e9a-4e29-a3a9-de3db6e8ac9a">
+                    <propertyInstance
+                      Id="fba74420-4e58-4281-a587-5aaef6aeb4dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d7b7647-eeea-4470-87e3-2d19d4b8788a">
+                    <propertyInstance
+                      Id="8e31d107-087e-4d38-8be2-17cf81194cd4"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb07a32b-d926-4d54-8a31-36aea9be7b0a">
+                    <propertyInstance
+                      Id="a58380c2-c519-4b80-afe4-a2a244aec64b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7a9a585-bf59-45fd-ab35-d3c94e678ad2">
+                    <propertyInstance
+                      Id="625045a7-ddb8-463b-b43f-c1b1b2e93c46"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c537210-6e50-445e-846d-72b2e7dc83f4">
+                    <propertyInstance
+                      Id="2399a6bb-b441-44f2-8091-249cd79f349b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c59885f2-c96d-476f-8840-c5b5182965f1">
+                    <propertyInstance
+                      Id="90048897-4c10-4d09-b3b7-5d3162c7f6d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbb536ef-735c-498e-b4d9-c8a53ff30ef9">
+                    <propertyInstance
+                      Id="07de98f6-9023-4b63-bddc-08ccd1eceea6"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="68f5e9ed-233a-47be-a7fb-668c3ab99836"
+        name="DriverLicense"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Водительско удостоверение</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a9bf8794-9f3f-487f-afa9-4f719b56447d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d9fcbc33-661b-4e07-b442-55d3d25063ca">
+                <propertyInstance
+                  Id="04d373dd-b839-41b9-8560-e046fcffc949"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4654da9-cd6e-44d0-b5ac-04ab91fd620e">
+                <propertyInstance
+                  Id="753dcbc9-19b3-414e-b510-a8a015032f14"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1eaca621-fec3-4b18-a467-828cf230e688">
+                <propertyInstance
+                  Id="c4a140f8-b9dd-48d8-892b-faf269f1066c"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="972e3fe7-43f6-4f4d-a4d1-d211193ebea1">
+                <propertyInstance
+                  Id="fa06f762-0b01-48b2-beab-f57d2bef537b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fd6e2d8-2b62-4f23-846c-03293a1f5682">
+                <propertyInstance
+                  Id="4188ef56-a500-49c8-8128-93dc31490713"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a43176a7-26c9-475f-8b89-7b3f5b292ec9"
+            name="Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e641ac8f-f574-4fae-8bbf-b6e73784087c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cfe9be2-5481-429b-8fd9-e0b906ef6858">
+                    <propertyInstance
+                      Id="df34a1e4-2d14-4339-9288-1c60c985d491"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c1b8d1f-8311-4276-85d0-f962d40f1710">
+                    <propertyInstance
+                      Id="e40a4cf8-c46a-4f1a-8629-ff8b1aa5d702"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b4a72d1-fd57-445c-83a4-931d16193927">
+                    <propertyInstance
+                      Id="fb0a0aef-423a-43b9-8f06-236d56bd8275"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dac69db8-801a-49d4-8231-d78dc72cb5a6">
+                    <propertyInstance
+                      Id="5448b2ff-08b2-4c38-ac73-82bcd2f6326b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16f1953f-934e-4a31-b99e-dd5452e66474">
+                    <propertyInstance
+                      Id="1d07cfe5-7d7d-44e1-aa3e-f3772191a596"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fce7e6c0-3bfb-4405-86ba-1871471cf485">
+                    <propertyInstance
+                      Id="a39d12aa-2d41-4263-a080-c198118cb48d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4c54d17-2911-4d26-9bc8-be0efe917fa3">
+                    <propertyInstance
+                      Id="33bd07de-344b-42fd-851c-678adab3d962"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ef93744d-573d-4fe9-9e81-729c14a54695"
+        name="UserRole"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8bae4b1c-0c1b-444d-b82e-79a7b348ae40"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="71974d74-7bf9-414c-adfc-32f592b61141"
+        name="RulesOfMutualSettlement "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Правила взаиморасчетов</description>
+        <targetEnds>
+          <association
+            Id="94bd2dee-c786-45be-8fce-033fb165fb5a"
+            isDerived="false"
+            sourceEndRoleName="RulesOfMutualSettlement "
+            targetEndRoleName="ConstraintDebtLimit"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="2ab49e11-f95d-46b0-b330-23cf4ece11c9"
+              LastKnownName="ConstraintDebtLimit"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dbf6591-33dc-40d0-9e9d-300eb8fc28ed"
+                  name="RulesOfMutualSettlement "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed508174-eb7d-4f18-93bd-78a178f2dd62"
+                  name="ConstraintDebtLimit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0a481238-1db5-49c2-a006-7be8d967085f"
+            name="DebtLimit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Если долг больше</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5f100b40-12b5-4d8f-b43a-1a9fa914cb0e"
+            name="PayPenaltyForUnsubscribeOwnOrder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Оплачивает штраф за отказ от своего заказа</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="44073452-bd03-464c-922d-3caca79ee42c"
+            name="PayPenaltyForUnsubscribeImportOrder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Оплата штрафа за отказ от перекидочного заказа</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c8859c56-d78e-413a-8613-6555422daf4d"
+            name="PayPenaltyForMorningOrders"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Оплата штрафа за утрение заказы</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="12354e36-6e77-405d-9690-862c6a3fb05a"
+            name="PersonalComissionCoefficientAccrual"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Коефициент начисления комиссионных</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a919595b-a363-4de5-8172-40e100ef042a"
+            name="PersonalComissionCashOwn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия своя нал</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e8621a1-8820-4194-a406-fa23aaf635d3"
+            name="PersonalComissionCashOwnValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия своя нал</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="72d3bbd1-307e-4111-b88b-ff319a2ee07b"
+            name="PersonalComissionCashlessOwn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия своя без. нал.</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7f104bfb-4c20-4333-af7e-c98b3ee46b1f"
+            name="PersonalComissionCashlessOwnValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия своя без. нал.</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2990573b-68dd-4ead-b90d-17d0ac744380"
+            name="PersonalComissionCashlessImport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия перекидка без. нал.</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8dc14d69-adb7-4818-a9f1-5ca94d1216dc"
+            name="PersonalComissionCashlessImportValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия перекидка  без. нал.</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7b884e90-82af-46b1-807e-5a6739bc769c"
+            name="PersonalComissionCashImport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия перекидка  нал</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="10e5ff45-ed9e-452e-b758-7d97434b99f5"
+            name="PersonalComissionCashImportValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Персональная комиссия перекидка нал</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a275a40e-10d5-4526-8456-11e143c41e70"
+            name="FactPay"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Платит по факту</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="72739f0c-25ba-4f9f-ae84-7187073b4b44"
+            name="SubscriberFeeOwn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Абоненская плата с заказа Свой</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2c8a44ea-b15e-4d71-a09d-1a2d34f347c7"
+            name="SubscriberFeeImport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Абоненская плата с заказа Импорт</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2a39cc86-e6c0-4a55-8caa-4075a555c2d8"
+        name="SettingsOrdersVisibility"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Настройка видимости заказов</description>
+        <targetEnds>
+          <association
+            Id="31790ca4-5cf6-4c6f-9e72-dc194118dbb1"
+            isDerived="false"
+            sourceEndRoleName="SettingsOrdersVisibility"
+            targetEndRoleName="OrderVisibility"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="c4501f07-4afc-4849-8ea2-4debe8193a54"
+              LastKnownName="OrderVisibility"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0dc60cda-ade0-4a66-9329-8265eb7ba255"
+                  name="SettingsOrdersVisibility"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cda30c1-5230-4bb3-b266-b38349eb17e4"
+                  name="OrderVisibility"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="27713ff3-2001-48d1-8643-9f035e032801"
+            name="ExtendednInformationOnOrder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Расширенная информация по зказу</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7b3e9b0c-d928-414d-b284-305e4e77c8f4"
+            name="ExtendednInformationOnImportOrder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Расширенная информация по зказу из перекидки</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ff18a861-3cf5-49a3-abb8-ebc9a6ed61e1"
+            name="DependOnNumberOfCompletedOrders"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Зависит от количества выполненных заказов</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="363f6f9e-585d-436c-a55d-f9f26e0cc1f9"
+            name="ClientNumberVisibility"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="91214b36-028d-4142-9534-b085374cc033"
+            name="SuggestOrderFromOtherSector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Предлагать заказы ссоседних секторов</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bb45a7b-91a5-4236-bc46-b9184d1ad0bb"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="66bac210-5b60-4050-9470-420a388e054b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="UserRole"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ef93744d-573d-4fe9-9e81-729c14a54695"
+              LastKnownName="UserRole"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d95626cd-510c-4578-8de2-8fabe25a9938"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b7b3655-d999-4bd6-bd15-676a661ee8f1"
+                  name="UserRole"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d024d4a8-ede3-44ab-b37e-606b50553bee"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8fe8812c-9c13-44a9-b496-9cb50b327168"
+            name="AccessToken"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="c4501f07-4afc-4849-8ea2-4debe8193a54"
+        name="OrderVisibility"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Видимость заказов</description>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="68bc943a-0010-4d99-8bec-692e4859d0f8"
+            name="All">
+            <description>Все</description>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="096c070c-5100-4fe0-85db-48a3cfb07908"
+            name="Cash">
+            <description>Наличный</description>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ea8456b6-fbb6-42a3-b884-092097c5a85a"
+            name="Cashless">
+            <description>Безналичный</description>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="539bc30a-a4c0-4a1a-bdbf-4e5f22422b50"
+        name="SettingDriverAccess"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Разрешения</description>
+        <ownedAttributesInternal>
+          <property
+            Id="e0c89b2d-62c7-4d7e-bd8c-72180d5b5592"
+            name="SetInSector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Поставновка в сектор</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a47a537-2802-4a70-9b1d-dc3ce0289e6b"
+            name="ConferenceCalWithCustomers"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Конференц связь с заказчиками</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd1da7ae-6855-4899-864a-608e909bb0d1"
+            name="PaymentViaTerminal"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Оплата через терминал</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9fa9bdd5-62b9-449b-be55-268c250f3ae5"
+            name="AutomaticTakingOrdersFromPhone"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Автовзятие с телефона</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="da5bde8f-38eb-477a-8821-488820d31ed0"
+            name="AutomaticPutOnOrderByGPSOwnOrders"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Автопостановка на заказ по GPS (Свои заказы)</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="56584b4d-f7bb-4e8d-9da5-9856a71a94f4"
+            name="AutomaticPutOnOrderByGPS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Автопостановка на заказ по GPS (Заказы СОЗ)</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b994da60-f44f-495a-b3d6-1df612bb06e9"
+            name="AutomaticPutOnOrderBySector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Автопостановка на заказ по сектору (Заказы СОЗ)</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4002be87-f29b-44c3-9370-d1a93bd7fd08"
+            name="AutomaticPutDriverInSectorDestinationByGPS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Автоматически ставить водителя в сектор назначения по GPS</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d0989bd-ca7e-4a77-82b6-f162ebdc3c00"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="2ab49e11-f95d-46b0-b330-23cf4ece11c9"
+        name="ConstraintDebtLimit"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Ограничения накладываемые на водителя при превышении долга</description>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="b14da1e3-901f-4b64-b271-3e1a62ba3706"
+            name="SeeOnlyCash" />
+          <enumerationLiteral
+            Id="49df5d57-6ae1-43cc-aef3-926a87ed113a"
+            name="AutomaticCloseDriver">
+            <description>Автоматически закрывать водителя</description>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="756bd3c1-ba31-4a53-af88-ff453904aae1"
+            name="NoConstraint">
+            <description>Ничего не делать</description>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="20799ec1-cf94-4429-96b9-bbfea584ced8"
+            name="DoesNotSeeImportCash">
+            <description>Не видет перекидку нал</description>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b4e5fa35-91f6-41cb-be3b-01543ccc132f"
+        name="ApplicationAccessRole"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f51be91d-307a-4a7f-815e-f024cd5e4cf1"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUserAccess"
+            targetEndRoleName="UserRole"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ef93744d-573d-4fe9-9e81-729c14a54695"
+              LastKnownName="UserRole"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0325f55d-aac8-45b6-a7a0-2dba8b1c159d"
+                  name="ApplicationUserAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aac4b273-2c46-41a4-aefe-6a98439427a6"
+                  name="UserRole"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f7e6a258-96dc-4523-be4c-685c4606da3c"
+            isDerived="false"
+            sourceEndRoleName="ApplicationRoleAccess"
+            targetEndRoleName="ApplicationAccess"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="23baf7e1-e7ef-4f02-b1e1-e1cd89cb7272"
+              LastKnownName="ApplicationAccess"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b890ab9-be73-4f98-8542-571c53877be9"
+                  name="ApplicationRoleAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1d263bb-6129-4a14-affd-b5d6e574b25a"
+                  name="ApplicationAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b5374c2b-c98c-48a7-a111-4fb9a109eff6"
+            isDerived="false"
+            sourceEndRoleName="ApplicationRoleAccess"
+            targetEndRoleName="AccessLevel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ff2bfd32-85a2-44bf-b0c7-8a8e686921fa"
+              LastKnownName="AccessType"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2dee705-c0cc-4313-abbc-6c025e534fd4"
+                  name="ApplicationRoleAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7b6c3b8-5aa1-4a01-814d-ae14b4ede68b"
+                  name="AccessLevel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="23baf7e1-e7ef-4f02-b1e1-e1cd89cb7272"
+        name="ApplicationAccess"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="39159d73-e6ed-4e7e-b110-619bf65c3132"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ff2bfd32-85a2-44bf-b0c7-8a8e686921fa"
+        name="AccessType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="416faab7-fc54-4e01-8d78-665118843992"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26969a1c-414e-4824-bbe7-b85728e35d16"
+        name="DebtOfDriver "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>История долгов</description>
+        <targetEnds>
+          <association
+            Id="2fdffcb6-a907-4fd5-8f0b-6ddfce1714c3"
+            isDerived="false"
+            sourceEndRoleName="DebtOfDriver "
+            targetEndRoleName="Driver"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="120c4c3d-e6b6-4175-84b9-ccf2a8039a9e"
+              LastKnownName="Driver"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="38daec69-22f2-4569-86e0-e523897d5085"
+                  name="DebtOfDriver "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be5670b2-c429-4ab9-9032-590e1701599f"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="73ad2f03-cc24-4925-8e51-5e616a2c7889"
+            isDerived="false"
+            sourceEndRoleName="DebtOfDriver "
+            targetEndRoleName="Order"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c85dba82-4de4-489f-ab1e-8d557edcda29"
+              LastKnownName="Order"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e75c4c2f-f07d-463f-9342-2262d0fb44b0"
+                  name="DebtOfDriver "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7085cb52-d0be-4198-b6e5-238662f571e7"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="85847835-35f4-4b90-80e9-1b4a541adb73"
+            name="OperationDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Дата время операции</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5f2a8345-445b-472f-b943-c4e590a90f73"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="515edf7e-3bd7-4b22-89e6-e634a783866b"
+            name="DebtBefore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Долго до</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="563c4a90-93f7-4bba-ba01-3c613797e7a4"
+            name="DebtAfter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Долг после</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a0938a57-5153-42e0-baa7-8b900f6e6027"
+            name="ActionDescription"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Действие</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9cb58c80-ccda-4cd0-83d0-82fd033a7408"
+            name="SummChanges"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="220d5672-b4ba-431e-80ea-e19b5e8a8c78"
+            name="PassedComission"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Сдал комиссии</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fbfe0be1-ba09-4496-9b03-3b284e7bc372"
+            name="PassedPledge"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Сдал залог</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9b0c23d3-3bc0-4787-8e05-60cbea81c6ce"
+            name="DebtPledge"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Долг залог</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3f720ca-35c5-4cb1-8816-cb0358de1de6"
+        name="PaymentsTerminals"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Пополнениес терминалов</description>
+        <targetEnds>
+          <association
+            Id="ce8e5225-6bfc-4a89-a202-755e8fe86a9c"
+            isDerived="false"
+            sourceEndRoleName="PaymentsTerminals"
+            targetEndRoleName="Driver"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="120c4c3d-e6b6-4175-84b9-ccf2a8039a9e"
+              LastKnownName="Driver"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5e4268f-fd87-41f4-a432-5da053ae6920"
+                  name="PaymentsTerminals"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cbcee16-21ad-4102-aaa4-c6f0f21fd939"
+                  name="Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2d931694-5890-4278-98ed-d0f5badd5a4f"
+            name="OperationDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Дата операции</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5f2a8345-445b-472f-b943-c4e590a90f73"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="85cf76bd-9720-40c6-8a77-7783210739e4"
+            name="PaymentsValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Размер пополнения</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="505eff09-1d04-47d7-8e77-fbd8fd72e977"
+            name="ComissionOfPaymentToDispatcher"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Комиссия с платежа в пользу диспетчерской</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a019f489-9159-4081-b082-9e5c228739b1"
+                LastKnownName="decimal"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8643c877-800f-4102-a2d4-8df0980db1ae"
+            name="CodeCheck"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Код чека</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4fb16d98-22fd-4c89-9edd-bf61e96aab0b"
+            name="TerminalNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Номер терминала</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="450867ad-170b-4a64-9fd7-02bda9b751c7"
+            name="TerminalServiceName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Название службы пополнения</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8912198d-2f3d-4c12-a51d-7d66ae45f87d"
+            name="PaymentId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>Идентификатор платежа</description>
             <type_NamedElement>
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"

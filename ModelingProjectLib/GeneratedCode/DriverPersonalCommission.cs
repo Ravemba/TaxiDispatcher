@@ -17,7 +17,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Нал (Свой)
 	/// </summary>
-	public virtual bool CashYour
+	public bool CashYour
 	{
 		get;
 		set;
@@ -26,7 +26,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Безнал и терм. (Свой)
 	/// </summary>
-	public virtual decimal CashlessPaymentsYourValue
+	public decimal CashlessPaymentsYourValue
 	{
 		get;
 		set;
@@ -35,7 +35,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Безнал и терм. (Свой)
 	/// </summary>
-	public virtual bool CashlessPaymentsYour
+	public bool CashlessPaymentsYour
 	{
 		get;
 		set;
@@ -44,7 +44,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Нал (Свой)
 	/// </summary>
-	public virtual decimal CashYourValue
+	public decimal CashYourValue
 	{
 		get;
 		set;
@@ -53,7 +53,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Безнал и терм. (Свой)
 	/// </summary>
-	public virtual bool CashlessPaymentsImport
+	public bool CashlessPaymentsImport
 	{
 		get;
 		set;
@@ -62,7 +62,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Безнал и терм. (Свой)
 	/// </summary>
-	public virtual decimal CashlessPaymentsImportValue
+	public decimal CashlessPaymentsImportValue
 	{
 		get;
 		set;
@@ -71,7 +71,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Нал (Свой)
 	/// </summary>
-	public virtual bool CashImport
+	public bool CashImport
 	{
 		get;
 		set;
@@ -80,7 +80,7 @@ public class DriverPersonalCommission
 	/// <summary>
 	/// Нал (Свой)
 	/// </summary>
-	public virtual decimal CashImportValue
+	public decimal CashImportValue
 	{
 		get;
 		set;

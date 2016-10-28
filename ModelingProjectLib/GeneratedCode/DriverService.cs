@@ -10,23 +10,17 @@ using System.Linq;
 using System.Text;
 
 /// <summary>
-/// Абонплата с заказа, гр
+/// Рация	
+/// Абонплата	
+/// Путевки	
+/// Аренда	
+/// Охрана	
+/// 
+/// 
 /// </summary>
-public class DriverFeeToOrder
+public class DriverService
 {
-	/// <summary>
-	/// Со своего
-	/// </summary>
-	public decimal Your
-	{
-		get;
-		set;
-	}
-
-	/// <summary>
-	/// С прекидочного
-	/// </summary>
-	public decimal Import
+	public string Name
 	{
 		get;
 		set;

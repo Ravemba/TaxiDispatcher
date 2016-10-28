@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,7 +55,9 @@
     <Compile Include="GeneratedCode\DriverConcurrently.cs" />
     <Compile Include="GeneratedCode\DriverFeeMissingOrder.cs" />
     <Compile Include="GeneratedCode\DriverFeeToOrder.cs" />
+    <Compile Include="GeneratedCode\DriverLicense.cs" />
     <Compile Include="GeneratedCode\DriverPersonalCommission.cs" />
+    <Compile Include="GeneratedCode\DriverService.cs" />
     <Compile Include="GeneratedCode\Order.cs" />
     <Compile Include="GeneratedCode\Status.cs" />
     <Compile Include="GeneratedCode\Street.cs" />

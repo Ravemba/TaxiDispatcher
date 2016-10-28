@@ -9,21 +9,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Adress
+public class Address
 {
-	public virtual City City
+	public City City
 	{
 		get;
 		set;
 	}
 
-	public virtual Street Street
+	public Street Street
 	{
 		get;
 		set;
 	}
 
-	public virtual int Flat
+	public int Flat
 	{
 		get;
 		set;
@@ -32,7 +32,7 @@ public class Adress
 	/// <summary>
 	/// Подъезд дома
 	/// </summary>
-	public virtual int FrontDoor
+	public int FrontDoor
 	{
 		get;
 		set;

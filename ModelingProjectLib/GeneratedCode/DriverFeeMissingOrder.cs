@@ -9,7 +9,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/// <summary>
+/// Начисл. При отсутсвии выпол. Заказов
+/// </summary>
 public class DriverFeeMissingOrder
 {
+	/// <summary>
+	/// Абоплата
+	/// </summary>
+	public virtual string SubscriberFee
+	{
+		get;
+		set;
+	}
+
+	/// <summary>
+	/// Рация
+	/// </summary>
+	public virtual string Radio
+	{
+		get;
+		set;
+	}
+
+	/// <summary>
+	/// Аренда
+	/// </summary>
+	public virtual string Rent
+	{
+		get;
+		set;
+	}
+
 }
 

@@ -10,12 +10,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Client
+public sealed class Client
 {
 	/// <summary>
 	/// Доступ
 	/// </summary>
-	public virtual string Access
+	public string Access
 	{
 		get;
 		set;
@@ -24,7 +24,7 @@ public class Client
 	/// <summary>
 	/// Фамилия
 	/// </summary>
-	public virtual string Surname
+	public string Surname
 	{
 		get;
 		set;
@@ -33,7 +33,7 @@ public class Client
 	/// <summary>
 	/// Адреса
 	/// </summary>
-	public virtual IEnumerable<Address> Addresses
+	public IEnumerable<Address> Addresses
 	{
 		get;
 		set;
@@ -42,7 +42,7 @@ public class Client
 	/// <summary>
 	/// Номер счета
 	/// </summary>
-	public virtual string ScoreName
+	public string ScoreName
 	{
 		get;
 		set;
@@ -51,7 +51,7 @@ public class Client
 	/// <summary>
 	/// Абонентский номер
 	/// </summary>
-	public virtual string SubscriberNumber
+	public string SubscriberNumber
 	{
 		get;
 		set;
@@ -60,7 +60,7 @@ public class Client
 	/// <summary>
 	/// Дата рождения
 	/// </summary>
-	public virtual DateTime DateOfBirth
+	public DateTime DateOfBirth
 	{
 		get;
 		set;
@@ -69,7 +69,7 @@ public class Client
 	/// <summary>
 	/// Отчество
 	/// </summary>
-	public virtual string Patronymic
+	public string Patronymic
 	{
 		get;
 		set;
@@ -78,7 +78,7 @@ public class Client
 	/// <summary>
 	/// Имя
 	/// </summary>
-	public virtual string Name
+	public string Name
 	{
 		get;
 		set;
@@ -87,7 +87,7 @@ public class Client
 	/// <summary>
 	/// Номер телефона
 	/// </summary>
-	public virtual IEnumerable<String> Phones
+	public IEnumerable<String> Phones
 	{
 		get;
 		set;
@@ -96,7 +96,7 @@ public class Client
 	/// <summary>
 	/// Подсчет заказов
 	/// </summary>
-	public virtual IEnumerable<Order> Orders
+	public IEnumerable<Order> Orders
 	{
 		get;
 		set;
@@ -105,7 +105,7 @@ public class Client
 	/// <summary>
 	/// Подсчет заказов
 	/// </summary>
-	public virtual Bool CountingOrders
+	public Bool CountingOrders
 	{
 		get;
 		set;
@@ -114,7 +114,7 @@ public class Client
 	/// <summary>
 	/// Последнее время пользования
 	/// </summary>
-	public virtual DateTime LastUseDateTime
+	public DateTime LastUseDateTime
 	{
 		get;
 		set;
@@ -123,7 +123,7 @@ public class Client
 	/// <summary>
 	/// Баланс
 	/// </summary>
-	public virtual decimal Balance
+	public decimal Balance
 	{
 		get;
 		set;
@@ -132,7 +132,7 @@ public class Client
 	/// <summary>
 	/// Форма оплаты
 	/// </summary>
-	public virtual string MethodOfPayment
+	public string MethodOfPayment
 	{
 		get;
 		set;
@@ -141,7 +141,7 @@ public class Client
 	/// <summary>
 	/// Тип скидки
 	/// </summary>
-	public virtual DiscountType DiscountType
+	public DiscountType DiscountType
 	{
 		get;
 		set;
@@ -150,7 +150,7 @@ public class Client
 	/// <summary>
 	/// Размер скидки
 	/// </summary>
-	public virtual decimal DiscountValue
+	public decimal DiscountValue
 	{
 		get;
 		set;
@@ -159,7 +159,7 @@ public class Client
 	/// <summary>
 	/// Дата создатия
 	/// </summary>
-	public virtual DateTime CreatingDateTime
+	public DateTime CreatingDateTime
 	{
 		get;
 		set;
@@ -168,7 +168,7 @@ public class Client
 	/// <summary>
 	/// Заметки водителя
 	/// </summary>
-	public virtual string NotesDriver
+	public string NotesDriver
 	{
 		get;
 		set;
@@ -177,7 +177,7 @@ public class Client
 	/// <summary>
 	/// Заметки
 	/// </summary>
-	public virtual string Notes
+	public string Notes
 	{
 		get;
 		set;
@@ -186,7 +186,7 @@ public class Client
 	/// <summary>
 	/// Номер
 	/// </summary>
-	public virtual int Number
+	public int Number
 	{
 		get;
 		set;
@@ -195,7 +195,7 @@ public class Client
 	/// <summary>
 	/// Род занятий
 	/// </summary>
-	public virtual string Occupation
+	public string Occupation
 	{
 		get;
 		set;
@@ -204,7 +204,7 @@ public class Client
 	/// <summary>
 	/// Электронная почта
 	/// </summary>
-	public virtual string Email
+	public string Email
 	{
 		get;
 		set;
@@ -213,7 +213,7 @@ public class Client
 	/// <summary>
 	/// Заблокирован
 	/// </summary>
-	public virtual bool Blocked
+	public bool Blocked
 	{
 		get;
 		set;
@@ -222,7 +222,7 @@ public class Client
 	/// <summary>
 	/// Ваучер
 	/// </summary>
-	public virtual bool Voucher
+	public bool Voucher
 	{
 		get;
 		set;
@@ -231,7 +231,7 @@ public class Client
 	/// <summary>
 	/// Индекс
 	/// </summary>
-	public virtual decimal Index
+	public decimal Index
 	{
 		get;
 		set;
@@ -240,7 +240,7 @@ public class Client
 	/// <summary>
 	/// Возврат
 	/// </summary>
-	public virtual decimal Return
+	public decimal Return
 	{
 		get;
 		set;
@@ -249,7 +249,7 @@ public class Client
 	/// <summary>
 	/// Наценка НДС
 	/// </summary>
-	public virtual decimal VARMarkup
+	public decimal VARMarkup
 	{
 		get;
 		set;
@@ -258,7 +258,7 @@ public class Client
 	/// <summary>
 	/// Заметки GPRS
 	/// </summary>
-	public virtual string NotesGPRS
+	public string NotesGPRS
 	{
 		get;
 		set;
@@ -267,13 +267,13 @@ public class Client
 	/// <summary>
 	/// Запрет на изменение поля WebOrdes
 	/// </summary>
-	public virtual bool BanOnTheChangeWebOrders
+	public bool BanOnTheChangeWebOrders
 	{
 		get;
 		set;
 	}
 
-	public virtual decimal BonusForOrder
+	public decimal BonusForOrder
 	{
 		get;
 		set;
@@ -282,7 +282,7 @@ public class Client
 	/// <summary>
 	/// Тип бонуса за заказ
 	/// </summary>
-	public virtual BonusForOrderType BonusForOrderType
+	public BonusForOrderType BonusForOrderType
 	{
 		get;
 		set;
@@ -291,7 +291,7 @@ public class Client
 	/// <summary>
 	/// Статус клиента
 	/// </summary>
-	public virtual Status Status
+	public Status Status
 	{
 		get;
 		set;

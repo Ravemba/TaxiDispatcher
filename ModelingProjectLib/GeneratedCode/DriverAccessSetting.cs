@@ -17,7 +17,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Постановка в секторе
 	/// </summary>
-	public virtual bool SetInSector
+	public bool SetInSector
 	{
 		get;
 		set;
@@ -26,7 +26,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Автопостановка на заказ посектору (заказы СОЗ)
 	/// </summary>
-	public virtual bool AutoOrderSectorPOPOrders
+	public bool AutoOrderSectorPOPOrders
 	{
 		get;
 		set;
@@ -35,7 +35,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Автопостановка на заказ по GPS (заказы СОЗ)
 	/// </summary>
-	public virtual bool AutoOrderByGPSPOPsOrders
+	public bool AutoOrderByGPSPOPsOrders
 	{
 		get;
 		set;
@@ -44,7 +44,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Постановка/Автопостановка на заказ по GPS (Свои заказы)
 	/// </summary>
-	public virtual bool AutoProductionToOrderOnGPSHisOrders
+	public bool AutoProductionToOrderOnGPSHisOrders
 	{
 		get;
 		set;
@@ -53,7 +53,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Автовзятие с телефона
 	/// </summary>
-	public virtual bool AutoAnswerPhone
+	public bool AutoAnswerPhone
 	{
 		get;
 		set;
@@ -62,7 +62,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Оплата комиссионных через терминал
 	/// </summary>
-	public virtual bool PaymentOfFeesThroughTerminal
+	public bool PaymentOfFeesThroughTerminal
 	{
 		get;
 		set;
@@ -71,7 +71,7 @@ public class DriverAccessSetting
 	/// <summary>
 	/// Конференц связь с клиентом
 	/// </summary>
-	public virtual bool ConferenceConnectionWithClient
+	public bool ConferenceConnectionWithClient
 	{
 		get;
 		set;

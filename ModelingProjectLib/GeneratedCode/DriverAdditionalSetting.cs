@@ -18,7 +18,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Автоматически ставить подителя в сектор еназначения по GPS
 	/// </summary>
-	public virtual bool AutomaticallyPutTheDriverInTheSectorOfDestinationByGPS
+	public bool AutomaticallyPutTheDriverInTheSectorOfDestinationByGPS
 	{
 		get;
 		set;
@@ -27,7 +27,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Автоматический пересчет долга (водитель работает по предоплате)
 	/// </summary>
-	public virtual bool AutomaticConversionOfDebtTheDriverOperatesOnPrepaidBasis
+	public bool AutomaticConversionOfDebtTheDriverOperatesOnPrepaidBasis
 	{
 		get;
 		set;
@@ -36,7 +36,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Коэфициент начисления комиссонных
 	/// </summary>
-	public virtual decimal CommissionAccrualFactor
+	public decimal CommissionAccrualFactor
 	{
 		get;
 		set;
@@ -45,7 +45,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Платит по факту (болеет, ремонт)
 	/// </summary>
-	public virtual bool PayingIntoTheIllRepair
+	public bool PayingIntoTheIllRepair
 	{
 		get;
 		set;
@@ -54,7 +54,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Если долг больше (Лимит задолжености)
 	/// </summary>
-	public virtual decimal LimitDebt
+	public decimal LimitDebt
 	{
 		get;
 		set;
@@ -65,7 +65,7 @@ public class DriverAdditionalSetting
 	/// Видит только безнал
 	/// Не видит перекидку нал
 	/// </summary>
-	public virtual ActionInExcessOfTheAmountOfDebt ActionInExcessOfTheAmountOfDebt
+	public ActionInExcessOfTheAmountOfDebt ActionInExcessOfTheAmountOfDebt
 	{
 		get;
 		set;
@@ -74,7 +74,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Не платит штраф за Отказ от своего заказа
 	/// </summary>
-	public virtual bool DoNotPayPenaltyForTheRefusalOfYourOrderFrom
+	public bool DoNotPayPenaltyForTheRefusalOfYourOrderFrom
 	{
 		get;
 		set;
@@ -83,7 +83,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Не платит штраф заотказ от перекидочного заказа
 	/// </summary>
-	public virtual bool DoNotPayPenaltyForTheRefusalToImportOrder
+	public bool DoNotPayPenaltyForTheRefusalToImportOrder
 	{
 		get;
 		set;
@@ -92,7 +92,7 @@ public class DriverAdditionalSetting
 	/// <summary>
 	/// Не платит штраф за Отказ от своего заказа
 	/// </summary>
-	public virtual bool DoNotPayPenaltyForTheMorningOrder
+	public bool DoNotPayPenaltyForTheMorningOrder
 	{
 		get;
 		set;
